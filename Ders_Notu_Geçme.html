@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders Notu Geçme</title>
+</head>
+<body>
+    <script>
+        let vize= Number(prompt("Vize Not:"))
+        let final= Number(prompt("Final Not:"))
+        let hesap= (vize*0.4)+(final*0.6)
+
+        hesap>=90 ? alert(`tebrikler AA notu ile geçtiniz, ortalamanız ${hesap}`):
+        (90>hesap && hesap>=80) ? alert(`tebrikler AB notu ile geçtiniz, ortalamanız ${hesap}`):
+        (80>hesap && hesap>=70) ? alert(`tebrikler BB notu ile geçtiniz, ortalamanız ${hesap}`):
+        (70>hesap && hesap>=60) ? alert(`tebrikler CB notu ile geçtiniz, ortalamanız ${hesap}`):
+        (60>hesap && hesap>=50) ? alert(`tebrikler CC notu ile geçtiniz, ortalamanız ${hesap}`):
+        (50>hesap && hesap>=40) ? alert(`tebrikler CD notu ile zorla geçti, ortalamanız ${hesap}`):
+        (40>hesap && hesap>=30) ? alert(`tebrikler DD notu ile şartlı geçti, ortalamanız ${hesap}`):
+        (30>hesap && hesap>=20) ? alert(`FD notu ile kaldınız, ortalamanız ${hesap}`):
+         alert(`FF notu ile kaldınız, ortalamanız ${hesap}`)
+
+
+    </script>
+</body>
+</html>
